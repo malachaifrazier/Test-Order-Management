@@ -1,0 +1,23 @@
+<%= form_with(model: order) do |form| %>
+  <% if order.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+        <% order.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.hidden_field :state unless action_name == 'edit' || action_name == 'update' %>
+    <%= form.label :control_number, style: "display: block" %>
+    <%= form.number_field :control_number %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
