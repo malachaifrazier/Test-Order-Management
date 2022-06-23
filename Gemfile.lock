@@ -95,6 +95,11 @@ GEM
     diff-lcs (1.5.0)
     digest (3.1.0)
     erubi (1.10.0)
+    factory_bot (6.2.1)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.2.0)
+      factory_bot (~> 6.2.0)
+      railties (>= 5.0.0)
     ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -215,6 +220,9 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    steady_state (1.0.0)
+      activemodel (>= 5.2)
+      activesupport (>= 5.2)
     stimulus-rails (1.0.4)
       railties (>= 6.0.0)
     strscan (3.0.3)
@@ -252,6 +260,7 @@ DEPENDENCIES
   binding_of_caller
   bootsnap
   capybara
+  factory_bot_rails
   importmap-rails
   jbuilder
   pg (~> 1.1)
@@ -263,6 +272,7 @@ DEPENDENCIES
   sassc-rails
   selenium-webdriver
   sprockets-rails
+  steady_state
   stimulus-rails
   turbo-rails
   tzinfo-data
