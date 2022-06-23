@@ -77,3 +77,4 @@ end
 
 # https://github.com/Betterment/steady_state
 gem 'steady_state'
+gem 'bootstrap'
